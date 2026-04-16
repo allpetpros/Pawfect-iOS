@@ -1,0 +1,44 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "180"
+ENV["FASTLANE_XCODE_LIST_TIMEOUT"] = "180"
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :development_archive do
+    gym(
+        output_directory: '/Volumes/LaCie/Jenkins/workspace/JAY-AP-Pawfect-iOS',
+        output_name: 'p103-customer.ipa',
+        scheme: 'p103-customer',
+        include_bitcode: false,
+        configuration: 'Debug',
+        export_method: "development",
+    )
+  end
+  lane :release_archive do
+    gym(
+        output_directory: '/Volumes/LaCie/Jenkins/workspace/JAY-AP-Pawfect-iOS',
+        output_name: 'p103-customer.ipa',
+        scheme: 'p103-customer',
+	clean: true,
+        include_bitcode: false,
+        configuration: 'Release',
+        export_method: "app-store",
+    )
+  end
+end

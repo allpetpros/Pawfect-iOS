@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aileronbold.ttf">
+            <string>Aileron-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardCollectionViewCell" customModule="p103_customer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="269" height="185"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="269" height="185"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8P-4n-Vwy" customClass="GradientView" customModule="p103_customer" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="249" height="160"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xz-dv-SNv">
+                                <rect key="frame" x="25" y="13" width="43" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_checbox" translatesAutoresizingMaskIntoConstraints="NO" id="eDi-4q-1bp">
+                                <rect key="frame" x="25" y="132" width="20" height="20"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main payment method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7B-9X-usf">
+                                <rect key="frame" x="55" y="138" width="107.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mastercard_icon" translatesAutoresizingMaskIntoConstraints="NO" id="vrl-4R-o0X">
+                                <rect key="frame" x="192" y="103" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="QeJ-B7-jgQ"/>
+                                    <constraint firstAttribute="height" constant="55" id="fLJ-Jl-3O8"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="M5n-BW-93k">
+                                <rect key="frame" x="25" y="73.5" width="199" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="••••" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhh-3L-xHm">
+                                        <rect key="frame" x="0.0" y="0.0" width="25.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="Aileron-Bold" family="Aileron" pointSize="18"/>
+                                        <color key="textColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="••••" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akU-bd-OeY">
+                                        <rect key="frame" x="51.5" y="0.0" width="25.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="Aileron-Bold" family="Aileron" pointSize="18"/>
+                                        <color key="textColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="••••" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2X-7z-K3J">
+                                        <rect key="frame" x="102.5" y="0.0" width="25.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="Aileron-Bold" family="Aileron" pointSize="18"/>
+                                        <color key="textColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9874" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVH-JR-TNM">
+                                        <rect key="frame" x="154" y="0.0" width="45" height="22"/>
+                                        <fontDescription key="fontDescription" name="Aileron-Bold" family="Aileron" pointSize="18"/>
+                                        <color key="textColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0xz-dv-SNv" firstAttribute="leading" secondItem="u8P-4n-Vwy" secondAttribute="leading" constant="25" id="2yX-do-q7I"/>
+                            <constraint firstAttribute="height" constant="160" id="89a-Dt-tVH"/>
+                            <constraint firstItem="M5n-BW-93k" firstAttribute="leading" secondItem="u8P-4n-Vwy" secondAttribute="leading" constant="25" id="AmK-YV-IPN"/>
+                            <constraint firstItem="W7B-9X-usf" firstAttribute="leading" secondItem="eDi-4q-1bp" secondAttribute="trailing" constant="10" id="CGq-Oe-h2V"/>
+                            <constraint firstItem="M5n-BW-93k" firstAttribute="top" secondItem="0xz-dv-SNv" secondAttribute="bottom" constant="40" id="NaV-Yh-iES"/>
+                            <constraint firstAttribute="bottom" secondItem="eDi-4q-1bp" secondAttribute="bottom" constant="8" id="TA2-5q-zI7"/>
+                            <constraint firstItem="eDi-4q-1bp" firstAttribute="leading" secondItem="u8P-4n-Vwy" secondAttribute="leading" constant="25" id="X7R-1S-qL0"/>
+                            <constraint firstAttribute="trailing" secondItem="vrl-4R-o0X" secondAttribute="trailing" constant="2" id="fe4-bD-Ll7"/>
+                            <constraint firstItem="0xz-dv-SNv" firstAttribute="top" secondItem="u8P-4n-Vwy" secondAttribute="top" constant="13" id="gcJ-bp-LNf"/>
+                            <constraint firstAttribute="bottom" secondItem="W7B-9X-usf" secondAttribute="bottom" constant="10" id="ipN-hW-0jx"/>
+                            <constraint firstAttribute="bottom" secondItem="vrl-4R-o0X" secondAttribute="bottom" constant="2" id="qYk-7w-CJk"/>
+                            <constraint firstAttribute="trailing" secondItem="M5n-BW-93k" secondAttribute="trailing" constant="25" id="uVL-Vg-tMa"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" systemColor="systemPurpleColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" systemColor="systemGreenColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="u8P-4n-Vwy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="2gx-gh-YA7"/>
+                <constraint firstItem="u8P-4n-Vwy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="FjH-3Q-jau"/>
+                <constraint firstAttribute="trailing" secondItem="u8P-4n-Vwy" secondAttribute="trailing" constant="10" id="RoC-Pg-dUt"/>
+                <constraint firstAttribute="bottom" secondItem="u8P-4n-Vwy" secondAttribute="bottom" constant="15" id="rYI-WC-GW2"/>
+            </constraints>
+            <size key="customSize" width="269" height="185"/>
+            <connections>
+                <outlet property="bankNameLabel" destination="0xz-dv-SNv" id="iXS-dF-LH9"/>
+                <outlet property="cardView" destination="u8P-4n-Vwy" id="PyL-af-udN"/>
+                <outlet property="lastFourDigits" destination="eVH-JR-TNM" id="Rbm-Ip-Dh1"/>
+                <outlet property="mainPaymentCheckImage" destination="eDi-4q-1bp" id="U5g-Ee-oc5"/>
+                <outlet property="mainPaymentLabel" destination="W7B-9X-usf" id="ebh-3w-Wrm"/>
+            </connections>
+            <point key="canvasLocation" x="118" y="-54"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mastercard_icon" width="55" height="55"/>
+        <image name="white_checbox" width="20" height="20"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SameForAllDayView" customModule="p103_customer" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="6td-NI-mnw"/>
+                <outlet property="leftButton" destination="KQs-52-p99" id="Dec-Zr-4yQ"/>
+                <outlet property="rightButton" destination="18M-PR-BBv" id="0Bk-tZ-hiY"/>
+                <outlet property="separatorH" destination="6Im-Ss-eun" id="t20-ow-TOY"/>
+                <outlet property="separatorV" destination="YY3-S6-ZHD" id="JNo-zw-Yzr"/>
+                <outlet property="titleLabel" destination="pDb-sN-wik" id="Vpv-XJ-ClK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="219"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDb-sN-wik">
+                    <rect key="frame" x="12" y="15" width="351" height="161"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Im-Ss-eun">
+                    <rect key="frame" x="0.0" y="176" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="sgr-0X-ZIq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-S6-ZHD">
+                    <rect key="frame" x="187" y="177" width="1" height="42"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="yjd-ME-yPc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQs-52-p99">
+                    <rect key="frame" x="0.0" y="177" width="187" height="42"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="leftButtonAction:" destination="-1" eventType="touchUpInside" id="QsB-e5-ioP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18M-PR-BBv">
+                    <rect key="frame" x="188" y="177" width="187" height="42"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="rightButtonAction:" destination="-1" eventType="touchUpInside" id="uDg-f4-bZb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6Im-Ss-eun" secondAttribute="trailing" id="1bp-el-Qh8"/>
+                <constraint firstItem="YY3-S6-ZHD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7JM-wR-KRG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="18M-PR-BBv" secondAttribute="trailing" id="Dbz-Ym-dSX"/>
+                <constraint firstItem="18M-PR-BBv" firstAttribute="leading" secondItem="YY3-S6-ZHD" secondAttribute="trailing" id="JOs-6f-ldC"/>
+                <constraint firstItem="pDb-sN-wik" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Ju1-e8-xMX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KQs-52-p99" secondAttribute="bottom" id="P7s-DW-EvH"/>
+                <constraint firstItem="YY3-S6-ZHD" firstAttribute="top" secondItem="6Im-Ss-eun" secondAttribute="bottom" id="PGp-ic-C8T"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YY3-S6-ZHD" secondAttribute="bottom" id="Wws-Om-AQ1"/>
+                <constraint firstItem="KQs-52-p99" firstAttribute="top" secondItem="6Im-Ss-eun" secondAttribute="bottom" id="YBo-bw-t9f"/>
+                <constraint firstItem="6Im-Ss-eun" firstAttribute="top" secondItem="pDb-sN-wik" secondAttribute="bottom" id="aE3-rY-YMt"/>
+                <constraint firstAttribute="trailing" secondItem="pDb-sN-wik" secondAttribute="trailing" constant="12" id="cRf-Np-9md"/>
+                <constraint firstItem="KQs-52-p99" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eA4-6N-GkQ"/>
+                <constraint firstItem="YY3-S6-ZHD" firstAttribute="leading" secondItem="KQs-52-p99" secondAttribute="trailing" id="hnT-8Q-MrW"/>
+                <constraint firstItem="6Im-Ss-eun" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lzY-Ju-NyZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="18M-PR-BBv" secondAttribute="bottom" id="tUE-ir-qln"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6Im-Ss-eun" secondAttribute="bottom" constant="42" id="w5q-wu-GfO"/>
+                <constraint firstItem="18M-PR-BBv" firstAttribute="top" secondItem="6Im-Ss-eun" secondAttribute="bottom" id="wsJ-gN-ZDb"/>
+                <constraint firstItem="pDb-sN-wik" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="xuz-Dn-RyI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="103.62318840579711" y="-82.700892857142847"/>
+        </view>
+    </objects>
+</document>

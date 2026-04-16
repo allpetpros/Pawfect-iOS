@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aileron.ttf">
+            <string>Aileron-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="225" id="KGk-i7-Jjw" customClass="SummarryTableViewCell" customModule="p103_customer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="502" height="225"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2hL-m3-irA">
+                        <rect key="frame" x="60" y="0.0" width="422" height="25"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="summaryOfVisiticon" translatesAutoresizingMaskIntoConstraints="NO" id="fSK-2U-g1Y">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="bwf-9k-g4l"/>
+                                    <constraint firstAttribute="height" constant="25" id="d0S-vb-OpZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary of Visit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdO-PO-Exm">
+                                <rect key="frame" x="28" y="8" width="394" height="17"/>
+                                <fontDescription key="fontDescription" name="Aileron-Regular" family="Aileron" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="ZtS-mY-Qb4"/>
+                        </constraints>
+                    </stackView>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GCn-b9-Hl6" customClass="IntrinsicTableView" customModule="p103_customer" customModuleProvider="target">
+                        <rect key="frame" x="60" y="45" width="422" height="110"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="YZ1-7j-pOJ"/>
+                        </constraints>
+                    </tableView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gj7-xh-FdW">
+                        <rect key="frame" x="10" y="8" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="eQv-8N-mDn"/>
+                            <constraint firstAttribute="height" constant="30" id="nhk-tm-CkC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Aileron-Regular" family="Aileron" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGK-NL-aBH">
+                        <rect key="frame" x="126" y="174" width="250" height="31"/>
+                        <color key="backgroundColor" name="stepColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="Hyd-cN-WOb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Aileron-Regular" family="Aileron" pointSize="18"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Done">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Gj7-xh-FdW" firstAttribute="top" secondItem="qdO-PO-Exm" secondAttribute="top" id="10Q-9h-40c"/>
+                    <constraint firstItem="GCn-b9-Hl6" firstAttribute="leading" secondItem="2hL-m3-irA" secondAttribute="leading" id="1J3-oh-tb1"/>
+                    <constraint firstItem="2hL-m3-irA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ad0-NU-9xr"/>
+                    <constraint firstItem="GCn-b9-Hl6" firstAttribute="top" secondItem="2hL-m3-irA" secondAttribute="bottom" constant="20" id="BY2-Ij-hrA"/>
+                    <constraint firstItem="2hL-m3-irA" firstAttribute="leading" secondItem="Gj7-xh-FdW" secondAttribute="trailing" constant="20" id="QVm-Va-z1f"/>
+                    <constraint firstItem="pGK-NL-aBH" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Uus-7E-qIT"/>
+                    <constraint firstItem="GCn-b9-Hl6" firstAttribute="trailing" secondItem="2hL-m3-irA" secondAttribute="trailing" id="VSJ-Ko-Jok"/>
+                    <constraint firstItem="Gj7-xh-FdW" firstAttribute="centerY" secondItem="qdO-PO-Exm" secondAttribute="centerY" id="XqT-bv-zuA"/>
+                    <constraint firstItem="pGK-NL-aBH" firstAttribute="top" secondItem="GCn-b9-Hl6" secondAttribute="bottom" constant="19" id="bxT-JP-xeU"/>
+                    <constraint firstAttribute="trailing" secondItem="2hL-m3-irA" secondAttribute="trailing" constant="20" id="ovW-rs-6P0"/>
+                    <constraint firstItem="Gj7-xh-FdW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="qVD-XU-A0u"/>
+                    <constraint firstAttribute="bottom" secondItem="pGK-NL-aBH" secondAttribute="bottom" constant="20" id="r1u-sH-OVj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="doneButtonTapped" destination="pGK-NL-aBH" id="w5a-KT-1ws"/>
+                <outlet property="summaryDataTableView" destination="GCn-b9-Hl6" id="L2r-dv-d7T"/>
+                <outlet property="summaryImageView" destination="fSK-2U-g1Y" id="XxV-Jr-MdM"/>
+                <outlet property="summaryLabel" destination="qdO-PO-Exm" id="nDj-lu-P1f"/>
+                <outlet property="thirdStepLabel" destination="Gj7-xh-FdW" id="aL5-M3-cFS"/>
+            </connections>
+            <point key="canvasLocation" x="-1071" y="-35"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="summaryOfVisiticon" width="15" height="15"/>
+        <namedColor name="stepColor">
+            <color red="0.88599997758865356" green="0.25099998712539673" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

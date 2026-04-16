@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PetsTopView" customModule="p103_customer" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="A69-k5-Ew1" id="OPb-PZ-zE2"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="L4g-OH-V6i"/>
+                <outlet property="mainLabel" destination="LoJ-Py-9l0" id="kl9-uX-5KP"/>
+                <outlet property="stateButton" destination="N9d-OR-FRX" id="KuK-dd-Om6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoJ-Py-9l0">
+                    <rect key="frame" x="25" y="9" width="42" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="mLC-tl-Rc7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="A69-k5-Ew1">
+                    <rect key="frame" x="25" y="36" width="374" height="30"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gQC-SZ-ig2">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9d-OR-FRX">
+                    <rect key="frame" x="409" y="31" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Gis-fK-0Kb"/>
+                        <constraint firstAttribute="width" constant="40" id="tg5-F1-fIv"/>
+                    </constraints>
+                    <state key="normal" image="bottomButtonArrow"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="stateButtonAction:" destination="-1" eventType="touchUpInside" id="cSJ-Xa-HQg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="N9d-OR-FRX" secondAttribute="bottom" constant="5" id="2jt-P6-rzi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="N9d-OR-FRX" secondAttribute="trailing" id="36e-nr-TFf"/>
+                <constraint firstItem="LoJ-Py-9l0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="LvI-jZ-wJN"/>
+                <constraint firstItem="LoJ-Py-9l0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="X13-zZ-DI3"/>
+                <constraint firstItem="A69-k5-Ew1" firstAttribute="top" secondItem="LoJ-Py-9l0" secondAttribute="bottom" constant="10" id="nZV-9k-FkB"/>
+                <constraint firstItem="A69-k5-Ew1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="pBw-3u-6ub"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="A69-k5-Ew1" secondAttribute="trailing" constant="50" id="rle-Ad-5oc"/>
+                <constraint firstAttribute="bottom" secondItem="A69-k5-Ew1" secondAttribute="bottom" constant="10" id="x4f-06-ldz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="247.10144927536234" y="-447.32142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bottomButtonArrow" width="14" height="9"/>
+    </resources>
+</document>
